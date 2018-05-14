@@ -39,7 +39,7 @@ exec --no-startup-id urxvtd --quiet --opendisplay --fork
 bindsym $mod+Return exec urxvtc
 
 # kill focused window
-bindsym $mod+Shift+A kill
+bindsym $mod+Shift+Q kill
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run
@@ -83,7 +83,7 @@ bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
-bindsym $mod+z layout tabbed
+bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
