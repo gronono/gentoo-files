@@ -141,6 +141,9 @@ alias grub-mkconfig='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias layman='sudo layman'
 alias revdep-rebuild='sudo revdep-rebuild'
 
+# Divers
+alias weather='curl wttr.in/Noumea'
+
 # PATH
 export PATH="${PATH}:${HOME}/bin"
 
