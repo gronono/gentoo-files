@@ -1,0 +1,56 @@
+app-admin/sudo		-sendmail
+app-arch/xz-utils	-extra-filters
+app-crypt/gnupg		-readline -smartcard
+app-crypt/pinentry 	-ncurses
+app-emulation/virtualbox-guest-additions X
+app-shells/zsh		-gdbm
+app-text/ghostscript-gpl cups
+app-text/hunspell	-ncurses -readline l10n_fr
+app-text/xmlto		text
+dev-lang/python:2.7	sqlite ncurses
+dev-lang/python		-gdbm ncurses -readline
+dev-libs/elfutils	-utils
+dev-libs/libxml2	-readline 
+dev-libs/nss		-nss-pem utils
+dev-util/cmake		-ncurses
+dev-vcs/git		-iconv -pcre-jit -perl -python
+gnome-base/gvfs		-http -udev udisks nfs archive samba
+media-libs/harfbuzz	-cairo -graphite i
+media-libs/libcanberra	-sound
+media-libs/libepoxy	X
+media-libs/libpng	apng
+media-libs/libwebp	gif
+media-libs/mesa		-gallium -llvm
+media-sound/lame	-frontend
+media-video/ffmpeg	-iconv alsa chromium cpudetection openh264 openssl theora vorbis x264 x265xvid xcb mp3
+net-im/pidgin		dbus -gstreamer -ncurses spell -xscreensaver  meanwhile
+net-libs/gnutls		-idn
+net-libs/nodejs		-npm
+sys-apps/man-db		-gdbm
+sys-apps/pciutils	-kmod
+sys-boot/grub		-fonts -themes
+sys-devel/clang		-static-analyser
+sys-devel/gcc		-fortran
+sys-devel/gettext	-ncurses
+sys-devel/llvm		-ncurses
+sys-fs/udisks		-gptfdisk
+virtual/ffmpeg		mp3 theora thread x264
+www-client/chromium     -hangouts l10n_fr -siod
+www-client/firefox      dbus l10n_fr startup-notification
+www-client/google-chrome l10n_fr
+x11-base/xorg-server	xvfb
+x11-libs/cairo		svg X xcb
+x11-libs/gtk+		vim-syntax X xinerama
+x11-libs/pango		X
+x11-libs/libxcb		xkb
+x11-libs/libxkbcommon	X
+x11-libs/libwnck	startup-notification
+x11-misc/dmenu		xinerama
+x11-misc/xdg-utils	-perl
+x11-terms/rxvt-unicode	-perl pixbuf startup-notification -vanilla xft
+x11-terms/xterm		xinerama
+xfce-base/libxfce4ui	startup-notification
+xfce-base/thunar	exif libnotify udisks
+xfce-base/xfce4-session	-xscreensaver
+xfce-base/xfce4-settings -xklavier libnotify
+xfce-base/xfwm4		startup-notification -xcomposite
