@@ -1,0 +1,31 @@
+{
+    "workbench.iconTheme": "seti",
+
+    // Turns auto fix on save on or off.
+    "tslint.autoFixOnSave": true,
+
+    // Contrôle l'emplacement de l'ouverture des éditeurs. Sélectionnez 'left' ou 'right' pour ouvrir les éditeurs à gauche ou à droite de l'éditeur actuellement actif. Sélectionnez 'first' ou 'last' pour ouvrir les éditeurs indépendamment de l'éditeur actuellement actif.
+    "workbench.editor.openPositioning": "last",
+
+    // Si l'option est activée, l'espace blanc de fin est supprimé au moment de l'enregistrement d'un fichier.
+    "files.trimTrailingWhitespace": true,
+
+    // Quand l'option est activée, une nouvelle ligne finale est insérée à la fin du fichier au moment de son enregistrement.
+    "files.insertFinalNewline": true,
+
+    // Nombre d'éditeurs affichés dans le volet Éditeurs ouverts. Définissez la valeur 0 pour masquer le volet.
+    "explorer.openEditors.visible": 0,
+
+    // Activez l'envoi des données d'utilisation et d'erreurs à Microsoft.
+    "telemetry.enableTelemetry": false,
+
+    // Activez l'envoi de rapports d'incidents à Microsoft.
+    // Cette option nécessite un redémarrage pour être prise en compte.
+    "telemetry.enableCrashReporter": false,
+    "typescript.check.npmIsInstalled": false,
+
+    // Pour afficher les linters en warning
+    "tslint.alwaysShowRuleFailuresAsWarnings": true,
+    "extensions.ignoreRecommendations": false,
+    "explorer.confirmDelete": false
+}
