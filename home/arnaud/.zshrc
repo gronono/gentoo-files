@@ -140,6 +140,7 @@ alias eselect='sudo eselect'
 alias grub-mkconfig='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias layman='sudo layman'
 alias revdep-rebuild='sudo revdep-rebuild'
+alias dispatch-conf='sudo dispatch-conf'
 
 # Divers
 alias weather='curl wttr.in/Noumea'
