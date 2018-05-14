@@ -19,6 +19,7 @@ sys-fs/dosfstools
 sys-kernel/gentoo-sources
 sys-process/cronie
 sys-process/htop
+sys-process/lsof
 www-client/firefox
 www-client/google-chrome
 x11-apps/xrandr
