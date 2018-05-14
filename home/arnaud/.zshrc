@@ -135,7 +135,7 @@ ssl_certificate() {
 # Gentoo
 alias eix-sync='sudo eix-sync'
 alias emerge='sudo emerge'
-alias env-update='env-update'
+alias env-update='sudo env-update'
 alias eselect='sudo eselect'
 alias grub-mkconfig='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias layman='sudo layman'
