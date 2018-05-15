@@ -121,8 +121,6 @@ mvn-setversion() {
 maven-clean() {
         find . -name "pom.xml" -exec mvn clean -f {} \; -print
 }
-# Visual Code
-alias code='code -n'
 
 # Ruby
 #eval "$(rbenv init -)"
