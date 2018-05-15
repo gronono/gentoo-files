@@ -13,6 +13,7 @@ app-shells/zsh-completions
 media-sound/alsa-utils
 net-im/pidgin
 net-misc/keychain
+net-misc/telnet-bsd
 sys-apps/mlocate
 sys-boot/grub
 sys-fs/dosfstools
