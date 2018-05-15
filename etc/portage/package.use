@@ -28,6 +28,7 @@ media-video/ffmpeg	-iconv alsa chromium cpudetection openh264 openssl theora vor
 net-im/pidgin		dbus -gstreamer spell -xscreensaver  meanwhile
 net-libs/gnutls		-idn
 net-libs/nodejs		-npm
+net-misc/curl		http2
 net-misc/iputils	-filecaps
 net-print/cups-filters	-postscript
 sys-apps/hwids		udev
