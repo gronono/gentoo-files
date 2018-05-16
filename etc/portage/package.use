@@ -42,6 +42,7 @@ sys-devel/gcc		-fortran
 sys-fs/udisks		-gptfdisk
 sys-libs/pam		-filecaps
 sys-process/cronie	-inotify
+sys-process/procps	ncurses
 virtual/ffmpeg		mp3 theora thread x264
 www-client/chromium     -hangouts l10n_fr -siod
 www-client/firefox      dbus l10n_fr startup-notification
