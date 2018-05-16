@@ -140,8 +140,3 @@ alias weather='curl wttr.in/Noumea'
 # PATH
 export PATH="${PATH}:${HOME}/bin"
 
-# urxvt
-zoom() {
-	printf '\33]50;%s\007' "xft:Monospace:pixelsize=$1"
-}
-
