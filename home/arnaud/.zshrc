@@ -94,7 +94,7 @@ bindkey "^[[8~" end-of-line
 zstyle ":completion:*:descriptions" format "%B%d%b"
 
 # Autostarting X
-#if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then exec startx; fi
+if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then exec startx; fi
 
 # GIT
 alias git-cleanup='git remote prune origin && git branch --merged | grep -v -e "\*" -e 'master' -e 'develop' | xargs -r -n 1 git branch -d'
