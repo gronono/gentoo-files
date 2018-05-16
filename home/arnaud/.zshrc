@@ -69,19 +69,6 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-
-# https://blog.cpy.re/urxvt-et-zsh/
-typeset -g -A key
-bindkey -e
-bindkey "^[[3~" delete-char
-bindkey "^R" history-incremental-search-backward
-bindkey "^[[1;5D" emacs-backward-word
-bindkey "^[[1;5C" emacs-forward-word
-bindkey "^[[5~" up-line-or-history
-bindkey "^[[6~" down-line-or-history
-bindkey "^[[7~" beginning-of-line
-bindkey "^[[8~" end-of-line
-
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
