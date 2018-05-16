@@ -10,7 +10,9 @@ app-text/xmlto		-text
 dev-lang/perl		-gdbm
 dev-lang/python:2.7	sqlite ncurses
 dev-lang/python		-gdbm  ncurses
+dev-libs/atk		introspection
 dev-libs/elfutils	-utils
+dev-libs/keybinder	introspection
 dev-libs/nss		-nss-pem utils
 dev-libs/libxslt	-crypt
 dev-vcs/git		-iconv -pcre-jit -perl -python
@@ -49,15 +51,19 @@ www-client/firefox      dbus l10n_fr startup-notification
 www-client/google-chrome l10n_fr
 x11-base/xorg-server	xvfb udev
 x11-libs/cairo		svg X xcb
-x11-libs/gtk+		vim-syntax X xinerama
-x11-libs/pango		X
+x11-libs/gdk-pixbuf	introspection
+x11-libs/gtk+		vim-syntax X xinerama introspection
+x11-libs/pango		X introspection
+x11-libs/libnotify	introspection
 x11-libs/libSM		-uuid
 x11-libs/libxcb		xkb
 x11-libs/libxkbcommon	X
 x11-libs/libwnck	startup-notification
+x11-libs/vte		-crypt introspection
 x11-misc/dmenu		xinerama
 x11-misc/xdg-utils	-perl
-x11-terms/rxvt-unicode	pixbuf startup-notification -vanilla xft unicode3
+x11-terms/rxvt-unicode	pixbuf startup-notification -vanilla xft
+x11-terms/terminator	dbus
 x11-terms/xterm		xinerama
 xfce-base/libxfce4ui	startup-notification
 xfce-base/thunar	exif libnotify udisks
