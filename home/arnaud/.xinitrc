@@ -2,11 +2,12 @@
 
 userresources=$HOME/.Xresources
 usermodmap=$HOME/.Xmodmap
+userinitrcd=$HOME/.xinitrc.d/
 sysresources=/etc/X11/xinit/Xresources
 sysmodmap=/etc/X11/xinit/Xmodmap
+sysinitrcd=/etc/X11/xinit/xinitrc.d/
 
 # merge in defaults and keymaps
-
 if [ -f $sysresources ]; then
     xrdb -merge $sysresources
 fi
@@ -32,13 +33,20 @@ else
  failsafe="yes"
 fi
 
-if [ -d /etc/X11/xinit/xinitrc.d ] ; then
- for f in /etc/X11/xinit/xinitrc.d/?* ; do
+if [ -d "$sysinitrcd" ] ; then
+ for f in $sysinitrcd/?* ; do
   [ -x "$f" ] && . "$f"
  done
  unset f
 fi
 
+if [ -d "$userinitrcd" ] ; then
+ for f in $userinitrcd/?* ; do
+  [ -x "$f" ] && . "$f"
+ done
+ unset f
+fi
+echo "dqd $failsafe"
 if [ -n "$failsafe" ]; then
  twm &
  xclock -geometry 50x50-1+1 &
@@ -46,6 +54,6 @@ if [ -n "$failsafe" ]; then
  xterm -geometry 80x20+494-0 &
  exec xterm -geometry 80x66+0+0 -name login
 else
- echo "-------------------------------------------------------------------" >>  ~/.xsession-errors.log
- exec $command >> ~/.xsession-errors.log
+ echo "-------------------------------------------------------------------" >>  $HOME/.xsession-errors.log
+ exec $command >> $HOME/.xsession-errors.log
 fi
