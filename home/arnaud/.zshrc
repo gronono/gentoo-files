@@ -8,6 +8,7 @@ export ZSH=/home/arnaud/.oh-my-zsh
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="robbyrussell"
+#ZSH_THEME="random"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -145,4 +146,9 @@ alias weather='curl wttr.in/Noumea'
 
 # PATH
 export PATH="${PATH}:${HOME}/bin"
+
+# urxvt
+zoom() {
+	printf '\33]50;%s\007' "xft:Monospace:pixelsize=$1"
+}
 

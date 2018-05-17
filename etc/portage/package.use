@@ -9,7 +9,7 @@ app-text/hunspell	l10n_fr
 app-text/xmlto		-text
 dev-lang/perl		-gdbm
 dev-lang/python:2.7	sqlite ncurses
-dev-lang/python		-gdbm 
+dev-lang/python		-gdbm  ncurses
 dev-libs/elfutils	-utils
 dev-libs/nss		-nss-pem utils
 dev-libs/libxslt	-crypt
