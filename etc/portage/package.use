@@ -56,7 +56,7 @@ x11-libs/libxkbcommon	X
 x11-libs/libwnck	startup-notification
 x11-misc/dmenu		xinerama
 x11-misc/xdg-utils	-perl
-x11-terms/rxvt-unicode	-perl pixbuf startup-notification -vanilla xft
+x11-terms/rxvt-unicode	pixbuf startup-notification -vanilla xft unicode3
 x11-terms/xterm		xinerama
 xfce-base/libxfce4ui	startup-notification
 xfce-base/thunar	exif libnotify udisks
