@@ -27,7 +27,6 @@ net-im/pidgin		dbus -gstreamer spell -xscreensaver  meanwhile
 net-libs/gnutls		-idn
 net-libs/nodejs		-npm
 net-misc/curl		http2
-net-misc/iputils	-filecaps
 net-print/cups-filters	-postscript
 sys-apps/hwids		udev
 sys-apps/iproute2	-iptables minimal
@@ -38,22 +37,20 @@ sys-boot/grub		-fonts -themes
 sys-devel/clang		-static-analyser
 sys-devel/gcc		-fortran
 sys-fs/udisks		-gptfdisk
-sys-libs/pam		-filecaps
 sys-process/cronie	-inotify
 sys-process/procps	ncurses
 virtual/ffmpeg		mp3 theora thread x264
 www-client/chromium     -hangouts l10n_fr -siod
-www-client/firefox      dbus l10n_fr 
+www-client/firefox      dbus l10n_fr startup-notification
 www-client/google-chrome l10n_fr
 x11-apps/xdpyinfo	xinerama
 x11-base/xorg-server	xvfb udev
 x11-libs/cairo		svg xcb
-x11-libs/gtk+		vim-syntax xinerama 
+x11-libs/gtk+		vim-syntax xinerama X
 x11-libs/libSM		-uuid
 x11-libs/libxcb		xkb
 x11-libs/vte		-crypt
 x11-misc/dmenu		xinerama
-x11-misc/i3status	-filecaps
 x11-misc/xdg-utils	-perl
 x11-terms/rxvt-unicode	-vanilla xft
 x11-terms/terminator	dbus
