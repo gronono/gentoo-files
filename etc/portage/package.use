@@ -4,10 +4,10 @@ app-crypt/gnupg		-smartcard
 app-emulation/virtualbox-guest-additions X
 app-shells/bash		-net
 app-shells/zsh		-gdbm
+app-text/poppler	-jpeg2k 
 app-text/hunspell	l10n_fr
-app-text/xmlto		-text
+app-text/xmlto		text
 dev-lang/perl		-gdbm
-#dev-lang/python:2.7	sqlite ncurses
 dev-lang/python		-gdbm  ncurses
 dev-libs/elfutils	-utils
 dev-libs/nss		-nss-pem utils
@@ -15,10 +15,12 @@ dev-libs/libxslt	-crypt
 dev-vcs/git		-iconv -pcre-jit -perl -python
 gnome-base/gvfs		-http -udev udisks nfs archive samba
 media-libs/freetype	-adobe-cff
-media-libs/harfbuzz	-cairo -graphite i
-media-libs/libcanberra	-sound
+media-libs/gst-plugins-bad X gtk
+media-libs/harfbuzz	-cairo -graphite icu
+media-libs/libcanberra	sound alsa
+media-libs/libepoxy	X
 media-libs/libpng	apng
-media-libs/libwebp	gif
+media-libs/libwebp	gif opengl
 media-libs/mesa		-gallium -llvm
 media-sound/alsa-utils	ncurses
 media-sound/lame	-frontend
@@ -26,6 +28,7 @@ media-video/ffmpeg	-iconv alsa chromium cpudetection openh264 openssl theora vor
 net-im/pidgin		dbus -gstreamer spell -xscreensaver  meanwhile
 net-libs/gnutls		-idn
 net-libs/nodejs		-npm
+net-libs/webkit-gtk	-geolocation libnotify X spell
 net-misc/curl		http2
 net-print/cups-filters	-postscript
 sys-apps/hwids		udev
@@ -37,7 +40,8 @@ sys-boot/grub		-fonts -themes
 sys-devel/clang		-static-analyser
 sys-devel/gcc		-fortran
 sys-fs/udisks		-gptfdisk
-sys-process/cronie	-inotify
+sys-libs/slang		png
+sys-process/cronie	-inotify -anacron
 sys-process/procps	ncurses
 virtual/ffmpeg		mp3 theora thread x264
 www-client/chromium     -hangouts l10n_fr -siod
@@ -45,8 +49,11 @@ www-client/firefox      dbus l10n_fr startup-notification
 www-client/google-chrome l10n_fr
 x11-apps/xdpyinfo	xinerama
 x11-base/xorg-server	xvfb udev
-x11-libs/cairo		svg xcb
+x11-libs/cairo		svg xcb X opengl
+x11-libs/libfm		-automount gtk
+x11-libs/gdk-pixbuf	X jpeg
 x11-libs/gtk+		vim-syntax xinerama X
+x11-libs/libxkbcommon	X
 x11-libs/libSM		-uuid
 x11-libs/libxcb		xkb
 x11-libs/vte		-crypt
