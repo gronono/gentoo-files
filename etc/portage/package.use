@@ -2,7 +2,6 @@ app-admin/sudo		-sendmail
 app-arch/xz-utils	-extra-filters
 app-crypt/gnupg		-smartcard
 app-crypt/gcr		gtk
-app-crypt/pinentry	gnome-keyring
 app-emulation/virtualbox-guest-additions X
 app-shells/bash		-net
 app-shells/zsh		-gdbm
