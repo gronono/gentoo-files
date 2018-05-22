@@ -1,6 +1,8 @@
 app-admin/sudo		-sendmail
 app-arch/xz-utils	-extra-filters
 app-crypt/gnupg		-smartcard
+app-crypt/gcr		gtk
+app-crypt/pinentry	gnome-keyring
 app-emulation/virtualbox-guest-additions X
 app-shells/bash		-net
 app-shells/zsh		-gdbm
@@ -8,20 +10,24 @@ app-text/poppler	-jpeg2k
 app-text/hunspell	l10n_fr
 app-text/xmlto		text
 dev-lang/perl		-gdbm
-dev-lang/python		-gdbm  ncurses
+dev-lang/python		-gdbm  ncurses sqlite
 dev-libs/elfutils	-utils
+dev-libs/glib		dbus
 dev-libs/nss		-nss-pem utils
+dev-libs/libxml2	python
 dev-libs/libxslt	-crypt
 dev-vcs/git		-iconv -pcre-jit -perl -python
 gnome-base/gvfs		-http -udev udisks nfs archive samba
 media-libs/freetype	-adobe-cff
 media-libs/gst-plugins-bad X gtk
 media-libs/harfbuzz	-cairo -graphite icu
+media-libs/imlib2	gif jpeg png
 media-libs/libcanberra	sound alsa
 media-libs/libepoxy	X
 media-libs/libpng	apng
 media-libs/libwebp	gif opengl
 media-libs/mesa		-gallium -llvm
+media-libs/speex	-vbr
 media-sound/alsa-utils	ncurses
 media-sound/lame	-frontend
 media-video/ffmpeg	-iconv alsa chromium cpudetection openh264 openssl theora vorbis x264 x265xvid xcb mp3
@@ -47,6 +53,9 @@ virtual/ffmpeg		mp3 theora thread x264
 www-client/chromium     -hangouts l10n_fr -siod
 www-client/firefox      dbus l10n_fr 
 www-client/google-chrome l10n_fr
+www-client/links	jpeg
+www-client/vivaldi	l10n_fr
+www-client/w3m		fbcon gdk-pixbuf
 x11-apps/xdpyinfo	xinerama
 x11-base/xorg-server	xvfb udev
 x11-libs/cairo		svg xcb X opengl
@@ -59,7 +68,7 @@ x11-libs/libxcb		xkb
 x11-libs/vte		-crypt
 x11-misc/dmenu		xinerama
 x11-misc/xdg-utils	-perl
-x11-terms/rxvt-unicode	-vanilla xft
+x11-terms/rxvt-unicode	-vanilla xft pixbuf
 x11-terms/terminator	dbus
 x11-terms/xterm		xinerama
 xfce-base/thunar	exif libnotify udisks
