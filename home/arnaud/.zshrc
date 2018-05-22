@@ -121,6 +121,9 @@ alias revdep-rebuild='sudo revdep-rebuild'
 alias dispatch-conf='sudo dispatch-conf'
 alias updatedb='sudo updatedb'
 
+# Ranger
+export RANGER_LOAD_DEFAULT_RC=FALSE
+
 # Divers
 alias weather='curl wttr.in/Noumea'
 
