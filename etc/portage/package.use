@@ -7,6 +7,7 @@ app-shells/zsh		-gdbm
 app-text/poppler	-jpeg2k 
 app-text/hunspell	l10n_fr
 app-text/xmlto		text
+dev-db/sqlite		secure-delete
 dev-lang/perl		-gdbm
 dev-lang/python		-gdbm  ncurses
 dev-libs/elfutils	-utils
@@ -20,6 +21,7 @@ media-libs/harfbuzz	-cairo -graphite icu
 media-libs/libcanberra	sound alsa
 media-libs/libepoxy	X
 media-libs/libpng	apng
+media-libs/libvpx	postproc
 media-libs/libwebp	gif opengl
 media-libs/mesa		-gallium -llvm
 media-sound/alsa-utils	ncurses
@@ -45,7 +47,7 @@ sys-process/cronie	-inotify -anacron
 sys-process/procps	ncurses
 virtual/ffmpeg		mp3 theora thread x264
 www-client/chromium     -hangouts l10n_fr -siod
-www-client/firefox      dbus l10n_fr startup-notification
+www-client/firefox      dbus l10n_fr startup-notification -screenshot system-harfbuzz system-icu system-jpeg system-libevent system-libvpx system-sqlite
 www-client/google-chrome l10n_fr
 x11-apps/xdpyinfo	xinerama
 x11-base/xorg-server	xvfb udev
@@ -56,6 +58,7 @@ x11-libs/gtk+		vim-syntax xinerama X
 x11-libs/libxkbcommon	X
 x11-libs/libSM		-uuid
 x11-libs/libxcb		xkb
+x11-libs/pango		X
 x11-libs/vte		-crypt
 x11-misc/dmenu		xinerama
 x11-misc/xdg-utils	-perl
