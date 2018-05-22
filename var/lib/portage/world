@@ -4,6 +4,7 @@ app-editors/vim
 app-emulation/virtualbox-guest-additions
 app-misc/ranger
 app-portage/eix
+app-portage/genlop
 app-portage/gentoolkit
 app-portage/layman
 app-portage/repoman
