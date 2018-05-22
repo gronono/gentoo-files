@@ -51,7 +51,7 @@ sys-process/cronie	-inotify -anacron
 sys-process/procps	ncurses
 virtual/ffmpeg		mp3 theora thread x264
 www-client/chromium     -hangouts l10n_fr -siod
-www-client/firefox      dbus l10n_fr 
+www-client/firefox      dbus l10n_fr startup-notification
 www-client/google-chrome l10n_fr
 www-client/links	jpeg
 www-client/vivaldi	l10n_fr
