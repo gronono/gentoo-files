@@ -1,0 +1,5 @@
+media-libs/freetype	-adobe-cff
+media-libs/mesa         -gallium -llvm
+sys-apps/hwids		udev
+x11-base/xorg-server    xvfb udev
+x11-libs/libXfont2	truetype

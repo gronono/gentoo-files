@@ -1,0 +1,3 @@
+dev-lang/perl		-gdbm
+x11-libs/gdk-pixbuf	jpeg
+x11-terms/rxvt-unicode  -vanilla xft pixbuf

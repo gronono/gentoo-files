@@ -1,0 +1,4 @@
+sys-auth/pambase	-nullok minimal
+sys-apps/iproute2	-iptables minimal
+sys-devel/gcc		-fortran
+sys-process/procps	ncurses

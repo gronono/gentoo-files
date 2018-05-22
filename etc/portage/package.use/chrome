@@ -1,0 +1,7 @@
+app-text/ghostscript-gpl	cups
+app-text/poppler		-jpeg2k
+app-text/xmlto			text
+net-print/cups-filters		-postscript
+x11-libs/gtk+			X xinerama
+x11-misc/xdg-utils		-perl
+www-client/google-chrome	l10n_fr
