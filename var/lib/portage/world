@@ -2,6 +2,7 @@ app-admin/sudo
 app-admin/sysklogd
 app-editors/vim
 app-emulation/virtualbox-guest-additions
+app-misc/jq
 app-misc/ranger
 app-portage/eix
 app-portage/genlop
