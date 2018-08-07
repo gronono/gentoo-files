@@ -1,0 +1,3 @@
+media-libs/gd		fontconfig jpeg png truetype
+media-gfx/graphviz 	-cairo svg
+

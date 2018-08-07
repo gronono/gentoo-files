@@ -1,0 +1,6 @@
+app-text/ghostscript-gpl -cups
+app-text/poppler	cairo png
+dev-libs/libxml2	python
+dev-libs/glib		dbus
+gnome-base/gvfs		-http
+

@@ -57,12 +57,17 @@ COMPLETION_WAITING_DOTS="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+  commons-aliases
+  docker
   git
   git-flow-avh
-  zsh-mvn
-  npm
-  ruby
   my-cnx
+  npm
+  nvm
+  ruby
+  yarn
+  ruby
+  ssh-agent
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -120,13 +125,18 @@ alias layman='sudo layman'
 alias revdep-rebuild='sudo revdep-rebuild'
 alias dispatch-conf='sudo dispatch-conf'
 alias updatedb='sudo updatedb'
+alias gentoo-update='emerge --sync && layman -S && eix-sync && eselect news list'
+alias gentoo-upgrade='emerge -avNDu --with-bdeps=y @world'
+alias gentoo-cleanup='emerge --depclean && revdep-rebuild && rm -rf /usr/portage/distfiles/*'
 
-# Ranger
+#Ranger
 export RANGER_LOAD_DEFAULT_RC=FALSE
 
 # Divers
 alias weather='curl wttr.in/Noumea'
 
+# VSCode
+alias code='visual-studio-code'
+
 # PATH
 export PATH="${PATH}:${HOME}/bin"
-

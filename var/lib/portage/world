@@ -1,7 +1,8 @@
 app-admin/sudo
 app-admin/sysklogd
 app-editors/vim
-app-emulation/virtualbox-guest-additions
+app-editors/visual-studio-code
+app-emulation/docker
 app-misc/jq
 app-misc/ranger
 app-portage/eix
@@ -12,10 +13,17 @@ app-portage/repoman
 app-shells/gentoo-zsh-completions
 app-shells/zsh
 app-shells/zsh-completions
+dev-java/java-config
 dev-vcs/git-flow
+gnome-base/gnome-keyring
 media-fonts/dejavu
+media-gfx/feh
+media-gfx/graphviz
 media-sound/alsa-utils
+net-analyzer/wireshark
 net-dns/bind-tools
+net-firewall/iptables
+net-ftp/filezilla
 net-im/pidgin
 net-misc/curl
 net-misc/keychain
@@ -24,12 +32,14 @@ sys-apps/mlocate
 sys-apps/yarn
 sys-boot/grub
 sys-fs/dosfstools
+sys-kernel/genkernel
 sys-kernel/gentoo-sources
 sys-process/cronie
 sys-process/htop
 sys-process/lsof
 www-client/firefox
 www-client/google-chrome
+x11-apps/xev
 x11-apps/xrandr
 x11-base/xorg-drivers
 x11-base/xorg-server
@@ -40,3 +50,4 @@ x11-misc/xdg-user-dirs
 x11-misc/xdg-utils
 x11-terms/rxvt-unicode
 x11-wm/i3
+xfce-base/xfce4-meta

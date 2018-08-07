@@ -54,8 +54,8 @@ function themis() {
 		*.integ.gnc) profile=integration ;;
 		*.qualif.gnc) profile=qualification ;;
 	esac
-	echo "curl -s http://themis-shadow-backend.ref.gnc:7003/api/$APP_NAME/$profile/$profile"
-	curl -s http://themis-shadow-backend.ref.gnc:7003/api/$APP_NAME/$profile/$profile | jq
+	echo "curl -s http://themis-backend.shadow-ref.gnc:7003/api/$APP_NAME/$profile/$profile"
+	curl -s http://themis-backend.shadow-ref.gnc:7003/api/$APP_NAME/$profile/$profile | jq
 	echo
 }
 
