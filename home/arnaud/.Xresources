@@ -1,8 +1,9 @@
 !!
 !! URxvt
 !!
-! Font DejaVu
-URxvt.font: xft:DejaVu Sans Mono:size=12
+! Fonts
+URxvt.font: xft:DejaVu Sans Mono:size=12, \
+	    xft:Font Awesome:pixelsize=24
 ! Désactive la scrollbar
 URxvt*scrollBar: false
 ! Taille du buffer
@@ -11,7 +12,12 @@ URxvt*saveLines: 10000
 URxvt.keysym.C-Right: \033[1;5C
 URxvt.keysym.C-Left: \033[1;5D
 ! Extensions
-URxvt.perl-ext-common: defaults,font-size
+URxvt.perl-ext-common: default,font-size,keyboard-select,clipboard
+URxvt.keysym.M-x: perl:keyboard-select:activate
+URxvt.keysym.M-s: perl:keyboard-select:search
+URxvt.keysym.M-c: perl:clipboard:copy
+URxvt.keysym.M-v : perl:clipboard:paste
+URxvt.keysym.M-C-v : perl:clipboard:paste_escaped
 
 !!
 !! Theme
