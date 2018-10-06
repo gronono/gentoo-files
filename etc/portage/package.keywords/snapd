@@ -1,0 +1,2 @@
+app-emulation/snapd ~amd64
+=sys-apps/snap-confine-1.0.43	~amd64

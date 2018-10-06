@@ -1,4 +1,3 @@
-media-libs/harfbuzz	-graphite
 x11-misc/dmenu          xinerama
 x11-libs/cairo		X xcb
 x11-libs/libxkbcommon   X

@@ -1,2 +1,1 @@
 sys-apps/util-linux static-libs
-sys-kernel/genkernel -firmware

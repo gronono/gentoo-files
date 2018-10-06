@@ -1,0 +1,4 @@
+www-client/chromium -hangouts
+media-libs/harfbuzz icu
+dev-libs/libxml2 icu
+

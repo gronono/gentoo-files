@@ -1,0 +1,6 @@
+# required by dev-lang/lua-5.2.3-r1::gentoo
+# required by @selected
+# required by @world (argument)
+=app-eselect/eselect-lua-1 ~amd64
+# required by =dev-lang/lua-5.2.3-r1 (argument)
+=dev-lang/lua-5.2.3-r1 ~amd64

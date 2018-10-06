@@ -1,14 +1,11 @@
-dev-qt/qtgui		-gif udev 
+dev-qt/qtgui		udev 
 dev-libs/libpcre2	pcre16
 media-libs/celt		ogg
 media-libs/flac		ogg
 media-libs/openal	alsa
 media-libs/gst-plugins-base alsa ivorbis theora
-media-libs/libcanberra	-gtk
 media-libs/libsndfile	alsa
-media-libs/openh264	-plugin
 media-sound/lame	-frontend
-media-video/ffmpeg 	vaapi alsa celt chromium cpudetection gnutls gsm -iconv lzma mp3 -network openal openh264 opus schroedinger theora truetype twolame vorbis vpx x264 x265 xvid 
-media-video/vlc		X qt5 alsa -dvbpsi faad flac gnutls gstreamer libnotify matroska mp3 mpeg musepack ogg opus jpeg png schroedinger taglib theora tremor truetype twolame udev vaapi vorbis vpx x264 x265 xml zvbi omxil libass
+media-video/vlc		alsa bluray cddb -faad fdk flac kate gnutls gstreamer libass libnotify matroska mp3 mpeg musepack ogg opus omxil postproc jpeg png qt5 schroedinger taglib theora tremor truetype twolame udev v4l vaapi vdpau vorbis vpx x264 x265 xml wma-fixed zvbi X
 sys-libs/zlib		minizip
 x11-libs/libva		X

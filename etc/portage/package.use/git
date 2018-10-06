@@ -1,2 +1,2 @@
 app-crypt/gnupg	-smartcard
-dev-vcs/git	-iconv -pcre-jit -perl -python
+dev-vcs/git	-pcre-jit -perl -python

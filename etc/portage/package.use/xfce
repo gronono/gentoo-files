@@ -3,3 +3,8 @@ xfce-base/xfce4-session	-xscreensaver
 xfce-base/thunar	exif libnotify
 xfce-base/xfce4-settings libnotify
 xfce-base/libxfce4ui	startup-notification
+gnome-base/gvfs -http nfs
+xfce-extra/xfce4-taskmanager gtk3
+xfce-extra/xfce4-sensors-plugin hddtemp lm_sensors
+xfce-extra/xfce4-pulseaudio-plugin keybinder
+

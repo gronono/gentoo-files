@@ -1,2 +1,1 @@
-app-arch/xz-utils	-extra-filters
-sys-boot/grub		-fonts -themes -truetype
+sys-boot/grub mount

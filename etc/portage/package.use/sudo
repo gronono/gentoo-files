@@ -1,1 +1,1 @@
-app-admin/sudo	-sendmail
+app-admin/sudo	-sendmail -ldap

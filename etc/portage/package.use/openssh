@@ -1,2 +1,2 @@
-net-misc/openssh	X509 skey
+net-misc/openssh	X509 skey -X
 

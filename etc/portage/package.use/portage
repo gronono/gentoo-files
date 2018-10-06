@@ -1,2 +1,4 @@
 app-portage/gemato	-blake2
+app-crypt/gnupg -ldap -smartcard -usb
+sys-libs/gdbm berkdb
 
