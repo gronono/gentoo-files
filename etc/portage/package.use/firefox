@@ -1,4 +1,6 @@
-media-libs/libsdl2 -joystick
-www-client/firefox system-harfbuzz system-icu system-jpeg system-libevent system-libvpx system-sqlite
-dev-db/sqlite secure-delete
-media-libs/libvpx postproc
+media-libs/libvpx	postproc
+dev-db/sqlite		secure-delete
+dev-lang/python		sqlite
+media-libs/libsdl2	-joystick
+media-libs/libpng	apng
+www-client/firefox	dbus l10n_fr startup-notification -screenshot system-harfbuzz system-icu system-jpeg system-libevent system-libvpx system-sqlite

@@ -1,40 +1,5 @@
 #compdef cnx
+cmds=( ${(uf)"$(< ${ZSH_CUSTOM}/plugins/my-cnx/autocomplete_list.txt)"} ) 
 _arguments \
-    "1:service:( \
-        argos \
-        avp \
-        bareme \
-        birt \
-        cafat \
-        calculir \
-        castor \
-        concoursnc \
-	connect-admin \
-	connect-authorize \
-	connect-resources \
-        gemini \
-	gemini-admin \
-        geode \
-        geode-admin \
-	ilda \
-        isee \
-        jess \
-        kermit \
-	letube \
-        neolan-releveur \
-        obsprix \
-	ocean \
-        oleti2 \
-        pac2cadastre \
-        pacadmin \
-        panda2 \
-	penc \
-        pollux \
-	publegales \
-        ranch \
-        rem \
-        rivoli \
-        starjetserver \
-	themis \
-	)" \
-    "2:zone:(integ qualif)"
+    "1:service:(${cmds})" \
+    "2:zone:(integ qualif)"    

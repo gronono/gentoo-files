@@ -1,0 +1,4 @@
+# https://bugs.gentoo.org/666876
+# app-shells/gentoo-zsh-completions-20150103 is blocking sys-apps/openrc
+=app-shells/gentoo-zsh-completions-20180228 ~amd64
+

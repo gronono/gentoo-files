@@ -86,7 +86,7 @@ source $ZSH/oh-my-zsh.sh
 zstyle ":completion:*:descriptions" format "%B%d%b"
 
 # Autostarting X
-if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then exec startx; fi
+#if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then exec startx; fi
 
 # GIT
 alias git-cleanup='git remote prune origin && git branch --merged | grep -v -e "\*" -e 'master' -e 'develop' | xargs -r -n 1 git branch -d'
@@ -125,9 +125,9 @@ alias layman='sudo layman'
 alias revdep-rebuild='sudo revdep-rebuild'
 alias dispatch-conf='sudo dispatch-conf'
 alias updatedb='sudo updatedb'
-alias gentoo-update='emerge --sync && layman -S && eix-sync && eselect news list'
-alias gentoo-upgrade='emerge -avNDu --with-bdeps=y @world'
-alias gentoo-cleanup='emerge --depclean && revdep-rebuild && rm -rf /usr/portage/distfiles/*'
+alias gentoo-update='sudo emerge --sync && sudo layman -S && sudo eix-update && eselect news list'
+alias gentoo-upgrade='sudo emerge -avNDu --with-bdeps=y @world'
+alias gentoo-cleanup='sudo emerge --depclean -a && sudo revdep-rebuild && sudo rm -rf /usr/portage/distfiles/*'
 
 #Ranger
 export RANGER_LOAD_DEFAULT_RC=FALSE

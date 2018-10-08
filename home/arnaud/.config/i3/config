@@ -141,3 +141,16 @@ bar {
 	status_command i3blocks
 #	status_command py3status -c ~/.config/i3status/config
 }
+
+# Startup workspace
+workspace 1 output VGA-1
+workspace 2 output VGA-2
+workspace 9 output VGA-3
+workspace 10 output VGA-3
+
+# Startup applications
+exec urxvtc
+exec google-chrome-stable https://webnotes.gouv.nc https://mattermost.ref.gnc
+exec pidgin
+
+

@@ -9,7 +9,7 @@ alias ll='ls -l'
 alias la='ls -a'
 
 # Prompt
-PS1="\e[0;31m\H\e[m \W $ "
+PS1="\[\e[31m\]\H\[\e[m\] \W \\$ "
 
 function conf() {
 	cat /opt/$APP_NAME/conf/$APP_NAME-back.yml
