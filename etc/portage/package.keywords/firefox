@@ -1,3 +1,4 @@
 www-client/firefox ~amd64
 =dev-libs/nss-3.39 ~amd64
+=dev-util/cbindgen-0.6.6 ~amd64
 
