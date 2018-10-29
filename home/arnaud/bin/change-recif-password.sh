@@ -66,7 +66,7 @@ fi
 echo "Vérification JIRA"
 curl -s http://jira.gouv.nc > /dev/null
 if [ $? -ne 0 ]; then
-	echo "Vous n'avez pas à JIRA !"
+	echo "Vous n'avez pas accès à JIRA !"
 	exit 4
 fi
 
