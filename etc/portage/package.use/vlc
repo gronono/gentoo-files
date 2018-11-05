@@ -6,6 +6,6 @@ media-libs/openal	alsa
 media-libs/gst-plugins-base alsa ivorbis theora
 media-libs/libsndfile	alsa
 media-sound/lame	-frontend
-media-video/vlc		alsa bluray cddb -faad fdk flac kate gnutls gstreamer libass libnotify matroska mp3 mpeg musepack ogg opus omxil postproc jpeg png qt5 schroedinger taglib theora tremor truetype twolame udev v4l vaapi vdpau vorbis vpx x264 x265 xml wma-fixed zvbi X
+media-video/vlc		alsa bluray cddb -faad fdk flac kate gnutls gstreamer libass libnotify matroska mp3 mpeg musepack ogg opus omxil postproc jpeg png qt5 taglib theora tremor truetype twolame udev v4l vaapi vdpau vorbis vpx x264 x265 xml wma-fixed zvbi X
 sys-libs/zlib		minizip
 x11-libs/libva		X
