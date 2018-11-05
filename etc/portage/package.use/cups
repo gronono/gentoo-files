@@ -1,1 +1,1 @@
-net-print/cups-filters -dbus -foomatic -jpeg -ldap -postscript -pdf -png -tiff 
+net-print/cups-filters -dbus -foomatic -jpeg -postscript -pdf -png -tiff 

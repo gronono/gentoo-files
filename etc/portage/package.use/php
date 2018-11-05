@@ -1,1 +1,1 @@
-dev-lang/php curl -gdbm -ldap -spell gd pdo
+dev-lang/php curl -gdbm -spell gd pdo
