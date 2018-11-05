@@ -8,8 +8,7 @@ MOUNT_CREDENTIALS=/root/recif.passwd
 CNTLM_CONF=/etc/cntlm.conf
 CNTLM_PORT=3128
 PROXY=proxy-web.proxy-dmz.gnc:3128
-NO_PROXY="localhost,127.0.0.1,127.0.1.1,*.recif.nc,*.appli-gestion.nc,*.gnc,/var/run/docker.sock,10.10.106.0/24,*.valid-gouv.nc,*.gouv.nc,*.dmz.nc"
-
+NO_PROXY=localhost,127.0.0.1,127.0.1.1,/var/run/docker.sock,10.10.106.0/24,*.recif.nc,*.appli-gestion.nc,*.gnc,*.valid-gouv.nc,*.dmz.nc,jira.gouv.nc,webnotes.gouv.nc,stats-new.gouv.nc
 
 if [ "$(id -u)" != "${ROOT_ID}" ]; then
 	echo "Ce script doit être lancé en root" 1>&2
@@ -47,6 +46,7 @@ Domain   ${RECIF_DOMAIN}
 Proxy    ${PROXY}
 NoProxy  ${NO_PROXY}
 Listen   127.0.0.1:${CNTLM_PORT}
+Header Proxy-Connection: keep-alive
 EOF
 echo "${hash}" >> ${CNTLM_CONF}
 chmod 600 ${CNTLM_CONF}

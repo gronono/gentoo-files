@@ -6,6 +6,7 @@ birt
 cafat 
 calculir 
 castor 
+cdm-admin
 cdm-ts
 concoursnc 
 connect-admin

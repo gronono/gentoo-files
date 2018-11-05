@@ -13,7 +13,12 @@ app-portage/layman
 app-shells/gentoo-zsh-completions
 app-shells/zsh
 app-shells/zsh-completions
+app-text/dos2unix
 dev-java/java-config
+dev-lang/php
+dev-php/composer
+dev-python/pip
+dev-util/shellcheck-bin
 dev-vcs/git-flow
 gnome-base/gnome-keyring
 media-fonts/dejavu
