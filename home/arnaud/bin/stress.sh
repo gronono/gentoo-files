@@ -1,4 +1,4 @@
-#! /bin/sh
+#! /bin/bash
 
 #
 # Permet de lancer un petit stress sur une URL spécifique
@@ -19,7 +19,7 @@ PIDLIST=""
 # Nombre de process CURL en erreur
 FAIL="0"
 
-function usage() {
+usage() {
 cat <<-EOF
 Usage: ${SCRIPT} [h] --url=<ulr> [--seq=<seq>] [--process=<process>]
   --url     url à tester
@@ -28,7 +28,7 @@ Usage: ${SCRIPT} [h] --url=<ulr> [--seq=<seq>] [--process=<process>]
 EOF
 }
 
-function parse_args() {
+parse_args() {
   local OPTIND
   args=$(getopt -o h --long help,url:,seq:,process: -n "${SCRIPT}" -- "$@")
   if [ $? != 0 ] ; then (>&2 usage); exit 1; fi
@@ -44,14 +44,14 @@ function parse_args() {
       *) (>&2 echo "Unknow argument $1"; usage); exit 1 ;;
     esac
   done
-  
+
   if [[ -z "${URL}" ]]; then
     (>&2 echo "Missing arguments"; usage); exit 1
   fi
 }
 
 # URL doit finir par ? ou & suivant s'il y a des query-params ou pas
-function normalize_URL {
+normalize_URL() {
   if [[ ${URL} != *"?"* ]]; then
     URL="${URL}?"
   else
@@ -59,26 +59,26 @@ function normalize_URL {
   fi
 }
 
-function stress() {
-  for i in $(seq 1 ${PROCESS})
+stress() {
+  for i in $(seq 1 "${PROCESS}")
   do
     curl --silent --fail --output /dev/null "${URL}[1-$SEQ]" &
-    PIDLIST="$PIDLIST $!"
+    PIDLIST="${PIDLIST} $!"
   done
 }
 
 # Attend que les process se finissent
-function waiting() {
-  for job in $PIDLIST
+waiting() {
+  for job in ${PIDLIST}
   do
     echo "Waiting process ${job}"
-    if ! wait ${job}; then
-      FAIL=$((${FAIL} + 1))
+    if ! wait "${job}"; then
+      FAIL=$((FAIL + 1))
     fi
   done
 }
 
-function result() {
+result() {
   if [ "${FAIL}" == "0" ]; then
     echo "YAY!"
     exit 0
@@ -96,4 +96,3 @@ normalize_URL
 stress
 waiting
 result
-
